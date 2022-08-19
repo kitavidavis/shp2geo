@@ -1,25 +1,11 @@
-module.exports = function parseShapefile({ url }) {
+module.exports = function parseShapefile(url) {
     const L = require("leaflet");
     const shp = require("shpjs");
 
-    const geo = L.geoJSON(
-        { features: []},
-        {
-            onEachFeature: function popUp(f, l) {
-                var out = [];
-
-                if (f.properties) {
-                    for (var key in f.properties) {
-                        out.push(key + ":" + f.properties[key]);
-                    }
-                    l.bindPopup(out.join("<br />"));
-                }
-            }
-        }
-    )
+    let geo;
 
     shp(url).then(function(data) {
-        geo.addData(data);
+        geo = data
     }).catch((err) => {
         console.log(err);
     })
