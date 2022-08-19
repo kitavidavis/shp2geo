@@ -1,10 +1,6 @@
-module.exports = function parseShapefile(url) {
+module.exports = function parseShapefile({ url }) {
     const L = require("leaflet");
     const shp = require("shpjs");
-
-    if (typeof url !== "string"){
-        throw new TypeError("URL must be a string")
-    }
 
     const geo = L.geoJSON(
         { features: []},
