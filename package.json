@@ -1,0 +1,29 @@
+{
+  "name": "shp2geo",
+  "version": "1.0.0",
+  "description": "A simple package to parse shapefile to geojson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kitavidavis/shp2geo.git"
+  },
+  "keywords": [
+    "Shapefile",
+    "Geojson",
+    "NPM"
+  ],
+  "author": "David Kitavi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kitavidavis/shp2geo/issues"
+  },
+  "homepage": "https://github.com/kitavidavis/shp2geo#readme",
+  "dependencies": {
+    "leaflet": "^1.8.0",
+    "path": "^0.12.7",
+    "shpjs": "^4.0.4"
+  }
+}
