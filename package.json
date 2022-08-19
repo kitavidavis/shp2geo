@@ -23,7 +23,6 @@
   "homepage": "https://github.com/kitavidavis/shp2geo#readme",
   "dependencies": {
     "leaflet": "^1.8.0",
-    "path": "^0.12.7",
     "shpjs": "^4.0.4"
   }
 }
