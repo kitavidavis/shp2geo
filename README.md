@@ -6,3 +6,10 @@ A simple javascript package that parses zipped shapefile into geojson
 ```
 npm i shp2geo
 ```
+
+The package requires a .zip shapefile url as parameter.
+```
+const shp2geo = require("shp2geo")
+const geo = shp2geo(<.zip url here>)
+console.log(geo)
+```
