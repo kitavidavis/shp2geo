@@ -2,3 +2,7 @@
 
 # shp2geo
 A simple javascript package that parses zipped shapefile into geojson
+
+```
+npm i shp2geo
+```
